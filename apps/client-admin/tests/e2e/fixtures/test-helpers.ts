@@ -6,14 +6,14 @@ import { expect, type Page } from "@playwright/test";
 export const ADMIN_USERS = {
 	admin: {
 		email: "admin@chirp.test",
-		password: "admin123",
+		password: "",
 		username: "admin",
 		displayName: "Admin User",
 		role: "admin" as const,
 	},
 	moderator: {
 		email: "moderator@chirp.test",
-		password: "mod123",
+		password: "",
 		username: "moderator",
 		displayName: "Moderator User",
 		role: "moderator" as const,
@@ -26,13 +26,13 @@ export const ADMIN_USERS = {
 export const REGULAR_USERS = {
 	alice: {
 		email: "alice@test.com",
-		password: "password123",
+		password: "",
 		username: "alice",
 		displayName: "Alice Johnson",
 	},
 	bob: {
 		email: "bob@test.com",
-		password: "password123",
+		password: "",
 		username: "bob",
 		displayName: "Bob Smith",
 	},
